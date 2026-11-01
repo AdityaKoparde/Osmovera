@@ -1,0 +1,10 @@
+# robots.txt — Osmovera
+# https://www.osmovera.com/robots.txt
+
+User-agent: *
+Allow: /
+
+# Crawl politely
+Crawl-delay: 1
+
+Sitemap: https://www.osmovera.com/sitemap.xml

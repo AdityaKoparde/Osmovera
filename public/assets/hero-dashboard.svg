@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 660 540" role="img"
+     aria-label="Illustration of a water analytics dashboard showing reuse rate, savings and flow charts">
+  <defs>
+    <linearGradient id="screenBg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f7fcfd"/>
+      <stop offset="1" stop-color="#e7f4f6"/>
+    </linearGradient>
+    <linearGradient id="areaFill" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#12949f" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#12949f" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="barGrad" x1="0" y1="1" x2="0" y2="0">
+      <stop offset="0" stop-color="#0e7c86"/>
+      <stop offset="1" stop-color="#38bdc7"/>
+    </linearGradient>
+    <linearGradient id="frameGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0e3d57"/>
+      <stop offset="1" stop-color="#041824"/>
+    </linearGradient>
+    <filter id="soft" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#08293c" flood-opacity="0.18"/>
+    </filter>
+  </defs>
+
+  <!-- ground shadow -->
+  <ellipse cx="330" cy="498" rx="212" ry="17" fill="#08293c" opacity="0.09"/>
+
+  <!-- monitor stand -->
+  <rect x="298" y="436" width="64" height="34" rx="6" fill="#0e3d57"/>
+  <rect x="236" y="466" width="188" height="16" rx="8" fill="#041824"/>
+
+  <!-- monitor frame -->
+  <rect x="56" y="40" width="548" height="404" rx="22" fill="url(#frameGrad)" filter="url(#soft)"/>
+
+  <!-- title bar with traffic dots -->
+  <rect x="56" y="40" width="548" height="38" rx="22" fill="#0a6b74"/>
+  <rect x="56" y="62" width="548" height="16" fill="#0a6b74"/>
+  <circle cx="82" cy="59" r="6" fill="#ef6b5b"/>
+  <circle cx="102" cy="59" r="6" fill="#f2b96b"/>
+  <circle cx="122" cy="59" r="6" fill="#63c98b"/>
+  <rect x="150" y="53" width="180" height="12" rx="6" fill="#ffffff" opacity="0.22"/>
+
+  <!-- screen -->
+  <rect x="74" y="94" width="512" height="326" rx="12" fill="url(#screenBg)"/>
+
+  <!-- top stat tiles -->
+  <g>
+    <rect x="92" y="110" width="150" height="58" rx="10" fill="#ffffff" stroke="#dbe8ec"/>
+    <rect x="106" y="124" width="58" height="8" rx="4" fill="#c3d8de"/>
+    <rect x="106" y="140" width="94" height="12" rx="6" fill="#0e7c86"/>
+
+    <rect x="255" y="110" width="150" height="58" rx="10" fill="#ffffff" stroke="#dbe8ec"/>
+    <rect x="269" y="124" width="58" height="8" rx="4" fill="#c3d8de"/>
+    <rect x="269" y="140" width="76" height="12" rx="6" fill="#e8a34a"/>
+
+    <rect x="418" y="110" width="150" height="58" rx="10" fill="#ffffff" stroke="#dbe8ec"/>
+    <rect x="432" y="124" width="58" height="8" rx="4" fill="#c3d8de"/>
+    <rect x="432" y="140" width="88" height="12" rx="6" fill="#12949f"/>
+  </g>
+
+  <!-- line chart panel -->
+  <g>
+    <rect x="92" y="184" width="290" height="148" rx="10" fill="#ffffff" stroke="#dbe8ec"/>
+    <rect x="106" y="198" width="92" height="9" rx="4.5" fill="#0e3d57" opacity="0.75"/>
+    <path d="M106 306 L106 316 L366 316" fill="none" stroke="#dbe8ec" stroke-width="2"/>
+    <path d="M108 292 C140 268 158 284 182 260 C208 234 232 252 258 228 C284 206 312 220 336 202 L362 194
+             L362 314 L108 314 Z" fill="url(#areaFill)"/>
+    <path d="M108 292 C140 268 158 284 182 260 C208 234 232 252 258 228 C284 206 312 220 336 202 L362 194"
+          fill="none" stroke="#0e7c86" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <circle cx="362" cy="194" r="5.5" fill="#ffffff" stroke="#0e7c86" stroke-width="3.4"/>
+  </g>
+
+  <!-- donut + legend panel -->
+  <g>
+    <rect x="398" y="184" width="170" height="148" rx="10" fill="#ffffff" stroke="#dbe8ec"/>
+    <rect x="412" y="198" width="72" height="9" rx="4.5" fill="#0e3d57" opacity="0.75"/>
+    <circle cx="446" cy="264" r="38" fill="none" stroke="#e7f1f3" stroke-width="14"/>
+    <path d="M446 226 a38 38 0 0 1 35 52" fill="none" stroke="#12949f" stroke-width="14" stroke-linecap="round"/>
+    <path d="M481 278 a38 38 0 0 1 -51 20" fill="none" stroke="#e8a34a" stroke-width="14" stroke-linecap="round"/>
+    <circle cx="446" cy="264" r="15" fill="#f7fcfd"/>
+    <rect x="500" y="242" width="52" height="8" rx="4" fill="#12949f"/>
+    <rect x="500" y="260" width="40" height="8" rx="4" fill="#e8a34a"/>
+    <rect x="500" y="278" width="46" height="8" rx="4" fill="#c3d8de"/>
+  </g>
+
+  <!-- bar chart panel -->
+  <g>
+    <rect x="92" y="346" width="476" height="58" rx="10" fill="#ffffff" stroke="#dbe8ec"/>
+    <g fill="url(#barGrad)">
+      <rect x="112" y="368" width="16" height="24" rx="4"/>
+      <rect x="138" y="360" width="16" height="32" rx="4"/>
+      <rect x="164" y="372" width="16" height="20" rx="4"/>
+      <rect x="190" y="354" width="16" height="38" rx="4"/>
+      <rect x="216" y="364" width="16" height="28" rx="4"/>
+      <rect x="242" y="350" width="16" height="42" rx="4"/>
+      <rect x="268" y="358" width="16" height="34" rx="4"/>
+      <rect x="294" y="346" width="16" height="46" rx="4"/>
+    </g>
+    <rect x="336" y="358" width="1" height="34" fill="#dbe8ec"/>
+    <rect x="356" y="360" width="120" height="9" rx="4.5" fill="#c3d8de"/>
+    <rect x="356" y="378" width="88" height="9" rx="4.5" fill="#e7f1f3"/>
+  </g>
+
+  <!-- floating droplet badge -->
+  <g filter="url(#soft)">
+    <circle cx="596" cy="404" r="40" fill="#ffffff" stroke="#dbe8ec"/>
+    <path d="M596 380c9 10 15 16.6 15 23.3A15 15 0 0 1 596 418a15 15 0 0 1-15-14.7c0-6.7 6-13.3 15-23.3Z"
+          fill="#dff3f5" stroke="#0e7c86" stroke-width="3" stroke-linejoin="round"/>
+    <path d="M584 405c3.2-2.8 6-2.8 9.2 0s6 2.8 9.2 0" fill="none" stroke="#e8a34a" stroke-width="3"
+          stroke-linecap="round"/>
+  </g>
+
+  <!-- small floating kpi card -->
+  <g filter="url(#soft)">
+    <rect x="18" y="300" width="150" height="66" rx="14" fill="#ffffff" stroke="#dbe8ec"/>
+    <rect x="34" y="318" width="30" height="30" rx="9" fill="#dff3f5"/>
+    <path d="M42 339l6-7 5 4 7-9" fill="none" stroke="#0e7c86" stroke-width="2.6" stroke-linecap="round"
+          stroke-linejoin="round"/>
+    <rect x="74" y="320" width="72" height="8" rx="4" fill="#c3d8de"/>
+    <rect x="74" y="336" width="52" height="10" rx="5" fill="#0e3d57" opacity="0.8"/>
+  </g>
+</svg>
